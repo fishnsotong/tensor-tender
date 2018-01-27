@@ -7,69 +7,79 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
     <header>
       <h1>
-        Choose your mix
+        Choose Your Mix
       </h1>
     </header>
 
     <main>
-	  <form id="dishes-form" action= "" method="post" enctype = "multipart/form-data">
-		  <label> Order: <label>
-			<input list="dishes" placeholder="Select a dish below:" />
-			<datalist id="dish">
-			  <option value="dish 1">
-			  <option value="dish 2">
-			  <option value="dish 3">
-			  <option value="dish 4">
-			  <option value="dish 5">
-			  <option value="dish 6">
-			</datalist>
-      <button type="submit">Submit</button>
+	  <form id="dishes-form" action= "/brew" method="post" enctype = "multipart/form-data">
+		  <label> Order:</label>
+			<select name="dishes">
+			  <option value="dish 1" selected>Dish 1</option>
+			  <option value="dish 2">Dish 2</option>
+			  <option value="dish 3">Dish 3</option>
+			  <option value="dish 4">Dish 4</option>
+			  <option value="dish 5">Dish 5</option>
+			  <option value="dish 6">Dish 6</option>
+			</select>
+			&nbsp;
+      <input type="submit">
     </form>
 
-		<br />
+		<br>
 
-    <form id="comments-form" action= "">
+		<header>
+      <h1>
+        Comment On Your Mix
+      </h1>
+    </header>
+
+    <form id="feedback-form" action= "/feedback">
 	  <label>Feedback: </label>
-		<input list="feedback" name="mBrowser" placeholder="Select a dish below:" /></label>
-		<datalist id="comment">
-			<option value="dish 1">
-			<option value="dish 2">
-			<option value="dish 3">
-			<option value="dish 4">
-			<option value="dish 5">
-			<option value="dish 6">
-		</datalist>
-
-    <button type="submit">Submit</button>
+		<select name="dishes">
+			<option value="dish 1" selected>Dish 1</option>
+			<option value="dish 2">Dish 2</option>
+			<option value="dish 3">Dish 3</option>
+			<option value="dish 4">Dish 4</option>
+			<option value="dish 5">Dish 5</option>
+			<option value="dish 6">Dish 6</option>
+		</select>
+		&nbsp;
+		<input type="submit">
+		<br><br>
 		<div class='coke'>
 			<label> Coke: </label>
 			<input type='radio' name='cokeLevel' value='little'> Not Enough
 			<input type='radio' name='cokeLevel' value='ok' checked> Just Right
 			<input type='radio' name='cokeLevel' value='much'> Too Much
 		</div>
+		&nbsp;
 		<div class='sprite'>
 			<label> Sprite: </label>
 			<input type='radio' name='spriteLevel' value='little'> Not Enough
 			<input type='radio' name='spriteLevel' value='ok' checked> Just Right
 			<input type='radio' name='spriteLevel' value='much'> Too Much
 		</div>
+		&nbsp;
 		<div class='orangeFanta'>
 			<label> Orange Fanta: </label>
 			<input type='radio' name='orangeFantaLevel' value='little'> Not Enough
 			<input type='radio' name='orangeFantaLevel' value='ok' checked> Just Right
 			<input type='radio' name='orangeFantaLevel' value='much'> Too Much
 		</div>
+		&nbsp;
 		<div class='lemonade'>
 			<label> Lemonade: </label>
 			<input type='radio' name='lemonadeLevel' value='little'> Not Enough
 			<input type='radio' name='lemonadeLevel' value='ok' checked> Just Right
 			<input type='radio' name='lemonadeLevel' value='much'> Too Much
 		</div>
+		&nbsp;
 		<div class='appleJuice'>
 			<label> Apple Juice: </label>
 			<input type='radio' name='appleJuiceLevel' value='little'> Not Enough
