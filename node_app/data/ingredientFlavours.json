@@ -1,0 +1,902 @@
+[
+  {
+    "ingredient": "orange_peel",
+    "flavour": "plant"
+  },
+  {
+    "ingredient": "orange",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "orange_juice",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "citrus",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "citrus_peel",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "nutmeg",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "bergamot",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "strawberry",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "grapefruit",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "mandarin",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "lemon_peel",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "apple",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "lime",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "bitter_orange",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "basil",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "tangerine",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "lemon",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "tarragon",
+    "flavour": "spice"
+  },
+  {
+    "ingredient": "anise",
+    "flavour": "spice"
+  },
+  {
+    "ingredient": "cinnamon",
+    "flavour": "spice"
+  },
+  {
+    "ingredient": "fennel",
+    "flavour": "spice"
+  },
+  {
+    "ingredient": "nutmeg",
+    "flavour": "spice"
+  },
+  {
+    "ingredient": "guava",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "star_anise",
+    "flavour": "spice"
+  },
+  {
+    "ingredient": "tarragon",
+    "flavour": "herb"
+  },
+  {
+    "ingredient": "anise",
+    "flavour": "spice"
+  },
+  {
+    "ingredient": "clove",
+    "flavour": "spice"
+  },
+  {
+    "ingredient": "ginger",
+    "flavour": "spice"
+  },
+  {
+    "ingredient": "marjoram",
+    "flavour": "spice"
+  },
+  {
+    "ingredient": "rosemary",
+    "flavour": "spice"
+  },
+  {
+    "ingredient": "mace",
+    "flavour": "spice"
+  },
+  {
+    "ingredient": "fennel",
+    "flavour": "herb"
+  },
+  {
+    "ingredient": "black_sesame_seed",
+    "flavour": "seed"
+  },
+  {
+    "ingredient": "rapeseed",
+    "flavour": "spice"
+  },
+  {
+    "ingredient": "guava",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "nectarine",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "fennel",
+    "flavour": "plant"
+  },
+  {
+    "ingredient": "cherry",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "pineapple",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "grape",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "melon",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "quince",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "bartlett_pear",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "banana",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "pear",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "concord_grape",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "plum",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "muscat_grape",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "honey",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "beer",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "kiwi",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "red_wine",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "apricot",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "roasted_pork",
+    "flavour": "meat"
+  },
+  {
+    "ingredient": "raw_beef",
+    "flavour": "meat"
+  },
+  {
+    "ingredient": "beef",
+    "flavour": "meat"
+  },
+  {
+    "ingredient": "bacon",
+    "flavour": "meat"
+  },
+  {
+    "ingredient": "cured_pork",
+    "flavour": "meat"
+  },
+  {
+    "ingredient": "chicken",
+    "flavour": "meat"
+  },
+  {
+    "ingredient": "roasted_beef",
+    "flavour": "meat"
+  },
+  {
+    "ingredient": "pork_sausage",
+    "flavour": "meat"
+  },
+  {
+    "ingredient": "pork",
+    "flavour": "meat"
+  },
+  {
+    "ingredient": "chicken",
+    "flavour": "meat"
+  },
+  {
+    "ingredient": "raw_beef",
+    "flavour": "meat"
+  },
+  {
+    "ingredient": "chicken",
+    "flavour": "meat"
+  },
+  {
+    "ingredient": "lamb",
+    "flavour": "meat"
+  },
+  {
+    "ingredient": "caviar",
+    "flavour": "meat"
+  },
+  {
+    "ingredient": "pork_liver",
+    "flavour": "meat"
+  },
+  {
+    "ingredient": "jamaican_rum",
+    "flavour": "alcoholic beverage"
+  },
+  {
+    "ingredient": "red_wine",
+    "flavour": "alcoholic beverage"
+  },
+  {
+    "ingredient": "cider",
+    "flavour": "alcoholic beverage"
+  },
+  {
+    "ingredient": "port_wine",
+    "flavour": "alcoholic beverage"
+  },
+  {
+    "ingredient": "white_wine",
+    "flavour": "alcoholic beverage"
+  },
+  {
+    "ingredient": "champagne_wine",
+    "flavour": "alcoholic beverage"
+  },
+  {
+    "ingredient": "whiskey",
+    "flavour": "alcoholic beverage"
+  },
+  {
+    "ingredient": "beer",
+    "flavour": "alcoholic beverage"
+  },
+  {
+    "ingredient": "cognac",
+    "flavour": "alcoholic beverage"
+  },
+  {
+    "ingredient": "sherry",
+    "flavour": "alcoholic beverage"
+  },
+  {
+    "ingredient": "apple_brandy",
+    "flavour": "alcoholic beverage"
+  },
+  {
+    "ingredient": "wine",
+    "flavour": "alcoholic beverage"
+  },
+  {
+    "ingredient": "cabernet_sauvignon_wine",
+    "flavour": "alcoholic beverage"
+  },
+  {
+    "ingredient": "rum",
+    "flavour": "alcoholic beverage"
+  },
+  {
+    "ingredient": "pineapple",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "sherry",
+    "flavour": "alcoholic beverage"
+  },
+  {
+    "ingredient": "rye_bread",
+    "flavour": "cereal/crop"
+  },
+  {
+    "ingredient": "wheat_bread",
+    "flavour": "cereal/crop"
+  },
+  {
+    "ingredient": "white_bread",
+    "flavour": "cereal/crop"
+  },
+  {
+    "ingredient": "cocoa",
+    "flavour": "plant derivative"
+  },
+  {
+    "ingredient": "black_tea",
+    "flavour": "plant derivative"
+  },
+  {
+    "ingredient": "passion_fruit",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "muscat_grape",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "brandy",
+    "flavour": "alcoholic beverage"
+  },
+  {
+    "ingredient": "parmesan_cheese",
+    "flavour": "dairy"
+  },
+  {
+    "ingredient": "strawberry",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "marjoram",
+    "flavour": "herb"
+  },
+  {
+    "ingredient": "porcini",
+    "flavour": "vegetable"
+  },
+  {
+    "ingredient": "matsutake",
+    "flavour": "vegetable"
+  },
+  {
+    "ingredient": "enokidake",
+    "flavour": "vegetable"
+  },
+  {
+    "ingredient": "shiitake",
+    "flavour": "vegetable"
+  },
+  {
+    "ingredient": "mushroom",
+    "flavour": "vegetable"
+  },
+  {
+    "ingredient": "milk",
+    "flavour": "dairy"
+  },
+  {
+    "ingredient": "cheddar_cheese",
+    "flavour": "dairy"
+  },
+  {
+    "ingredient": "blue_cheese",
+    "flavour": "dairy"
+  },
+  {
+    "ingredient": "katsuobushi",
+    "flavour": "fish/seafood"
+  },
+  {
+    "ingredient": "coffee",
+    "flavour": "plant derivative"
+  },
+  {
+    "ingredient": "lamb",
+    "flavour": "meat"
+  },
+  {
+    "ingredient": "roasted_peanut",
+    "flavour": "nut/seed/pulse"
+  },
+  {
+    "ingredient": "caviar",
+    "flavour": "fish/seafood"
+  },
+  {
+    "ingredient": "peanut",
+    "flavour": "nut/seed/pulse"
+  },
+  {
+    "ingredient": "onion",
+    "flavour": "vegetable"
+  },
+  {
+    "ingredient": "baked_potato",
+    "flavour": "vegetable"
+  },
+  {
+    "ingredient": "peanut_butter",
+    "flavour": "plant derivative"
+  },
+  {
+    "ingredient": "soybean",
+    "flavour": "vegetable"
+  },
+  {
+    "ingredient": "concord_grape",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "huckleberry",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "juniper_berry",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "black_currant",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "elderberry",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "black_raspberry",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "cranberry",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "raspberry",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "blueberry",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "berry",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "camembert_cheese",
+    "flavour": "dairy"
+  },
+  {
+    "ingredient": "provolone_cheese",
+    "flavour": "dairy"
+  },
+  {
+    "ingredient": "cheese",
+    "flavour": "dairy"
+  },
+  {
+    "ingredient": "sheep_cheese",
+    "flavour": "dairy"
+  },
+  {
+    "ingredient": "romano_cheese",
+    "flavour": "dairy"
+  },
+  {
+    "ingredient": "roquefort_cheese",
+    "flavour": "dairy"
+  },
+  {
+    "ingredient": "emmental_cheese",
+    "flavour": "dairy"
+  },
+  {
+    "ingredient": "feta_cheese",
+    "flavour": "dairy"
+  },
+  {
+    "ingredient": "cottage_cheese",
+    "flavour": "dairy"
+  },
+  {
+    "ingredient": "mozzarella_cheese",
+    "flavour": "dairy"
+  },
+  {
+    "ingredient": "swiss_cheese",
+    "flavour": "dairy"
+  },
+  {
+    "ingredient": "cream_cheese",
+    "flavour": "dairy"
+  },
+  {
+    "ingredient": "goat_cheese",
+    "flavour": "dairy"
+  },
+  {
+    "ingredient": "munster_cheese",
+    "flavour": "dairy"
+  },
+  {
+    "ingredient": "gruyere_cheese",
+    "flavour": "dairy"
+  },
+  {
+    "ingredient": "cayenne",
+    "flavour": "spice"
+  },
+  {
+    "ingredient": "pepper",
+    "flavour": "spice"
+  },
+  {
+    "ingredient": "green_bell_pepper",
+    "flavour": "vegetable"
+  },
+  {
+    "ingredient": "black_pepper",
+    "flavour": "spice"
+  },
+  {
+    "ingredient": "tabasco_pepper",
+    "flavour": "spice"
+  },
+  {
+    "ingredient": "bell_pepper",
+    "flavour": "vegetable"
+  },
+  {
+    "ingredient": "thai_pepper",
+    "flavour": "spice"
+  },
+  {
+    "ingredient": "geranium",
+    "flavour": "flower"
+  },
+  {
+    "ingredient": "flower",
+    "flavour": "flower"
+  },
+  {
+    "ingredient": "carnation",
+    "flavour": "flower"
+  },
+  {
+    "ingredient": "grape_brandy",
+    "flavour": "alcoholic beverage"
+  },
+  {
+    "ingredient": "melon",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "durian",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "mung_bean",
+    "flavour": "vegetable"
+  },
+  {
+    "ingredient": "kidney_bean",
+    "flavour": "vegetable"
+  },
+  {
+    "ingredient": "red_bean",
+    "flavour": "vegetable"
+  },
+  {
+    "ingredient": "black_bean",
+    "flavour": "vegetable"
+  },
+  {
+    "ingredient": "lima_bean",
+    "flavour": "vegetable"
+  },
+  {
+    "ingredient": "bean",
+    "flavour": "vegetable"
+  },
+  {
+    "ingredient": "red_kidney_bean",
+    "flavour": "vegetable"
+  },
+  {
+    "ingredient": "rice",
+    "flavour": "cereal/crop"
+  },
+  {
+    "ingredient": "brown_rice",
+    "flavour": "cereal/crop"
+  },
+  {
+    "ingredient": "jasmine_tea",
+    "flavour": "plant derivative"
+  },
+  {
+    "ingredient": "tea",
+    "flavour": "plant derivative"
+  },
+  {
+    "ingredient": "green_tea",
+    "flavour": "plant derivative"
+  },
+  {
+    "ingredient": "okra",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "popcorn",
+    "flavour": "cereal/crop"
+  },
+  {
+    "ingredient": "squid",
+    "flavour": "fish/seafood"
+  },
+  {
+    "ingredient": "orange_flower",
+    "flavour": "flower"
+  },
+  {
+    "ingredient": "rose",
+    "flavour": "flower"
+  },
+  {
+    "ingredient": "jasmine",
+    "flavour": "flower"
+  },
+  {
+    "ingredient": "lavender",
+    "flavour": "flower"
+  },
+  {
+    "ingredient": "vegetable",
+    "flavour": "vegetable"
+  },
+  {
+    "ingredient": "watercress",
+    "flavour": "vegetable"
+  },
+  {
+    "ingredient": "potato_chip",
+    "flavour": "vegetable"
+  },
+  {
+    "ingredient": "smoked_fish",
+    "flavour": "fish/seafood"
+  },
+  {
+    "ingredient": "cod",
+    "flavour": "fish/seafood"
+  },
+  {
+    "ingredient": "haddock",
+    "flavour": "fish/seafood"
+  },
+  {
+    "ingredient": "mackerel",
+    "flavour": "fish/seafood"
+  },
+  {
+    "ingredient": "salmon",
+    "flavour": "fish/seafood"
+  },
+  {
+    "ingredient": "eel",
+    "flavour": "fish/seafood"
+  },
+  {
+    "ingredient": "catfish",
+    "flavour": "fish/seafood"
+  },
+  {
+    "ingredient": "tuna",
+    "flavour": "fish/seafood"
+  },
+  {
+    "ingredient": "herring",
+    "flavour": "fish/seafood"
+  },
+  {
+    "ingredient": "fish",
+    "flavour": "fish/seafood"
+  },
+  {
+    "ingredient": "smoked_salmon",
+    "flavour": "fish/seafood"
+  },
+  {
+    "ingredient": "white_bread",
+    "flavour": "cereal/crop"
+  },
+  {
+    "ingredient": "coriander",
+    "flavour": "spice"
+  },
+  {
+    "ingredient": "lovage",
+    "flavour": "herb"
+  },
+  {
+    "ingredient": "leaf",
+    "flavour": "plant"
+  },
+  {
+    "ingredient": "thyme",
+    "flavour": "herb"
+  },
+  {
+    "ingredient": "shallot",
+    "flavour": "vegetable"
+  },
+  {
+    "ingredient": "garlic",
+    "flavour": "vegetable"
+  },
+  {
+    "ingredient": "chive",
+    "flavour": "vegetable"
+  },
+  {
+    "ingredient": "seed",
+    "flavour": "nut/seed/pulse"
+  },
+  {
+    "ingredient": "black_sesame_seed",
+    "flavour": "nut/seed/pulse"
+  },
+  {
+    "ingredient": "rapeseed",
+    "flavour": "plant"
+  },
+  {
+    "ingredient": "rosemary",
+    "flavour": "herb"
+  },
+  {
+    "ingredient": "basil",
+    "flavour": "herb"
+  },
+  {
+    "ingredient": "vanilla",
+    "flavour": "spice"
+  },
+  {
+    "ingredient": "peppermint",
+    "flavour": "herb"
+  },
+  {
+    "ingredient": "japanese_plum",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "lemon_peel",
+    "flavour": "plant"
+  },
+  {
+    "ingredient": "almond",
+    "flavour": "nut/seed/pulse"
+  },
+  {
+    "ingredient": "roasted_almond",
+    "flavour": "nut/seed/pulse"
+  },
+  {
+    "ingredient": "honey",
+    "flavour": "animal product"
+  },
+  {
+    "ingredient": "bartlett_pear",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "papaya",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "olive",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "apricot",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "mango",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "sturgeon_caviar",
+    "flavour": "fish/seafood"
+  },
+  {
+    "ingredient": "lingonberry",
+    "flavour": "fruit"
+  },
+  {
+    "ingredient": "cream",
+    "flavour": "dairy"
+  },
+  {
+    "ingredient": "buttermilk",
+    "flavour": "dairy"
+  },
+  {
+    "ingredient": "coconut",
+    "flavour": "nut/seed/pulse"
+  },
+  {
+    "ingredient": "mint",
+    "flavour": "herb"
+  },
+  {
+    "ingredient": "spearmint",
+    "flavour": "herb"
+  },
+  {
+    "ingredient": "tomato",
+    "flavour": "vegetable"
+  },
+  {
+    "ingredient": "clove",
+    "flavour": "spice"
+  },
+  {
+    "ingredient": "hop",
+    "flavour": "cereal/crop"
+  },
+  {
+    "ingredient": "malt",
+    "flavour": "cereal/crop"
+  },
+  {
+    "ingredient": "butter",
+    "flavour": "dairy"
+  },
+  {
+    "ingredient": "potato",
+    "flavour": "vegetable"
+  },
+  {
+    "ingredient": "potato",
+    "flavour": "vegetable"
+  },
+  {
+    "ingredient": "egg",
+    "flavour": "animal product"
+  },
+  {
+    "ingredient": "leek",
+    "flavour": "vegetable"
+  }
+]
