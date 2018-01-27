@@ -67,7 +67,7 @@ def loadNN():
 
 def predictNN(test_input):
     nn = loadNN()
-    nn.predict(test_input, batch_size=None, steps=None)
+    print(nn.predict(test_input, batch_size=None, steps=None))
 
 def evalNN(nn, X_test, Y_test):
     print('entered function')
@@ -91,9 +91,9 @@ def visualNNProg(nn_fitted, X_test, Y_test):
 X_train, Y_train, X_test, Y_test = readData("data/trainingData.csv", 5)
 # nn = compileNN(14, 20, 5)
 # nn_fitted = fitNN(nn, X_train, Y_train, 500)
-test_input = np.array([0.109589, 0.0958904, 0.0958904, 0.0273973, 0.0958904, 0.0821918, 0.136986, 0.0821918, 0.0136986, 0.0684932, 0.0821918, 0.0684932, 0.0410959, 0.0136986])
-test_input.shape
-#predictNN(test_input)
+test_input = np.array([[0.109589, 0.0958904, 0.0958904, 0.0273973, 0.0958904, 0.0821918, 0.136986, 0.0821918, 0.0136986, 0.0684932, 0.0821918, 0.0684932, 0.0410959, 0.0136986]])
+print(test_input.shape)
+predictNN(test_input)
 # evalNN(nn, X_test, Y_test)
 # evalNNHistory(nn_fitted, 500)
 # visualNNProg(nn_fitted, X_test, Y_test)
