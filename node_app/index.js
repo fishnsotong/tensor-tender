@@ -6,6 +6,7 @@ require('./routes')(App);
 
 App.use(bodyParser.urlencoded());
 App.use(Express.static(__dirname + '/public'));
-App.listen(function() {
+
+App.listen(3000, function() {
   console.log('Server up!')
 });
