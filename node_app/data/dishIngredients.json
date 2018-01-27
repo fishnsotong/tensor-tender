@@ -1,0 +1,20 @@
+{
+  "dishes": [
+    {
+      "name": "Secret detox drink",
+      "ingredients": [
+        "apple cidar vinegar", "lemon juice", "cinnamon"
+      ]
+    }, {
+      "name": "Gluten free spring rolls",
+      "ingredients": [
+        "onion", "chicken",	"garlic",	"bean"
+      ]
+    }, {
+      "name": "Mushroom rice",
+      "ingredients": [
+        "garlic", "onion",	"black_pepper",	"brown_rice",	"butter",	"chive"
+      ]
+    }
+  ]
+}
