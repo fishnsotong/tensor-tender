@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="C:/Users/Eread.X-FI-M11/Desktop/style.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header>
@@ -17,43 +17,67 @@
     </header>
 
     <main>
-	  <form id="dishes-form" action= "">
-	  <nav class="nav-menu">
-      <ul class="clearfix">
+	  <form id="dishes-form" action= "" method="post" enctype = "multipart/form-data">
+		  <label> Order: <label>
+			<input list="dishes" placeholder="Select a dish below:" />
+			<datalist id="dish">
+			  <option value="dish 1">
+			  <option value="dish 2">
+			  <option value="dish 3">
+			  <option value="dish 4">
+			  <option value="dish 5">
+			  <option value="dish 6">
+			</datalist>
+      <button type="submit">Submit</button>
+    </form>
 
-	  <label>Order:
-		<input list="dish" name="myBrowser" placeholder="Select a dish below:" /></label>
-		<datalist id="dish">
-		  <option value="Chrome">
-		  <option value="Firefox">
-		  <option value="Internet Explorer">
-		  <option value="Opera">
-		  <option value="Safari">
-		  <option value="Microsoft Edge">
+		<br />
+
+    <form id="comments-form" action= "">
+	  <label>Feedback: </label>
+		<input list="feedback" name="mBrowser" placeholder="Select a dish below:" /></label>
+		<datalist id="comment">
+			<option value="dish 1">
+			<option value="dish 2">
+			<option value="dish 3">
+			<option value="dish 4">
+			<option value="dish 5">
+			<option value="dish 6">
 		</datalist>
 
-        <button type="submit">Submit</button>
+    <button type="submit">Submit</button>
+		<div class='coke'>
+			<label> Coke: </label>
+			<input type='radio' name='cokeLevel' value='little'> Not Enough
+			<input type='radio' name='cokeLevel' value='ok' checked> Just Right
+			<input type='radio' name='cokeLevel' value='much'> Too Much
+		</div>
+		<div class='sprite'>
+			<label> Sprite: </label>
+			<input type='radio' name='spriteLevel' value='little'> Not Enough
+			<input type='radio' name='spriteLevel' value='ok' checked> Just Right
+			<input type='radio' name='spriteLevel' value='much'> Too Much
+		</div>
+		<div class='orangeFanta'>
+			<label> Orange Fanta: </label>
+			<input type='radio' name='orangeFantaLevel' value='little'> Not Enough
+			<input type='radio' name='orangeFantaLevel' value='ok' checked> Just Right
+			<input type='radio' name='orangeFantaLevel' value='much'> Too Much
+		</div>
+		<div class='lemonade'>
+			<label> Lemonade: </label>
+			<input type='radio' name='lemonadeLevel' value='little'> Not Enough
+			<input type='radio' name='lemonadeLevel' value='ok' checked> Just Right
+			<input type='radio' name='lemonadeLevel' value='much'> Too Much
+		</div>
+		<div class='appleJuice'>
+			<label> Apple Juice: </label>
+			<input type='radio' name='appleJuiceLevel' value='little'> Not Enough
+			<input type='radio' name='appleJuiceLevel' value='ok' checked> Just Right
+			<input type='radio' name='appleJuiceLevel' value='much'> Too Much
+		</div>
 
-      </form>
-
-      <form id="comments-form" action= "">
-	  <nav class="nav-menu">
-      <ul class="clearfix">
-
-	  <label>Comment:
-<input list="comment" name="mBrowser" placeholder="Select a dish below:" /></label>
-<datalist id="comment">
-  <option value="Chrome">
-  <option value="Firefox">
-  <option value="Internet Explorer">
-  <option value="Opera">
-  <option value="Safari">
-  <option value="Microsoft Edge">
-</datalist>
-
-        <button type="submit">Submit</button>
-
-      </form>
+    </form>
 
   <div class="btn-group">
   <p>Coke:<p/>
