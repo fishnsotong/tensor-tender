@@ -1,3 +1,6 @@
+page-main,
+
+
 * {
   box-sizing: border-box;
 }
@@ -12,6 +15,10 @@ h1 {
   color: pink;
 }
 
+label {
+	font-size: 16px
+	}
+	
 .bold {
   font-weight: bold;
 }
@@ -40,7 +47,7 @@ input {
   font-size: 16px;
 }
 
-button {
+submit {
   background: #c6d934;
   background-image: -webkit-linear-gradient(top, #c6d934, #2980b9);
   background-image: -moz-linear-gradient(top, #c6d934, #2980b9);
@@ -66,7 +73,9 @@ button:active {
   box-shadow: none;
 }
 
-.label {
+
+
+option {
     background-color: #4CAF50; /* Green background */
     border: 1px solid green; /* Green border */
     color: white; /* White text */
@@ -86,3 +95,4 @@ button:active {
     display: table;
 }
 
+}

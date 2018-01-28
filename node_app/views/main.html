@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
-	<head>
+	<head lang="en">
     <title>Welcome to Mixing Time!</title>
     <meta name="description" content="A cool drink">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
-      <h1>
+      <h1 align="center">
         Choose Your Mix
       </h1>
     </header>
 
     <main>
-	  <form id="dishes-form" action= "/brew" method="post">
+	  <form id="dishes-form" action= "/brew" method="post" align="center">
 		  <label> Order:</label>
 			<select name="dishes">
 			  <option value="Secret detox drink" selected>Secret detox drink</option>
@@ -27,19 +28,19 @@
 			  <option value="dish 5">Dish 5</option>
 			  <option value="dish 6">Dish 6</option>
 			</select>
-			&nbsp;
+			<br>
       <input type="submit">
     </form>
 
 		<br>
 
 		<header>
-      <h1>
+      <h1 align ="center">
         Comment On Your Mix
       </h1>
     </header>
 
-    <form id="feedback-form" action= "/feedback">
+    <form id="feedback-form" action= "/feedback" align="center">
 	  <label>Feedback: </label>
 		<select name="dishes">
 			<option value="dish 1" selected>Dish 1</option>
@@ -49,7 +50,7 @@
 			<option value="dish 5">Dish 5</option>
 			<option value="dish 6">Dish 6</option>
 		</select>
-		&nbsp;
+		<br>
 		<input type="submit">
 		<br><br>
 		<div class='coke'>
