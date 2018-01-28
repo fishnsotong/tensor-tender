@@ -1,9 +1,6 @@
-//#include <Wire.h>
-//#include <LiquidCrystal_I2C.h>
-
 const int dummy = 0;
 
-const int dispenserPins[] = {5, 6, 9, 10, 11};
+const int dispenserPins[5] = {5, 6, 9, 10, 11};
 float drinks[4];
 boolean dispenserRunning[4];
 unsigned long motorStartMillis[4];
@@ -26,14 +23,17 @@ void setup() {
     dispenserRunning[a] = false;
 
   }
+  pinMode(13, OUTPUT);
 }
-
-/*
 
 void loop() {
 
   while (Serial.available() > 0) {
     String incomingData = Serial.readString();
+    pinMode(13, HIGH);
+    delay(200);
+    pinMode(13, LOW);
+    
 
     for (int a = 0; a < 5; a++) {
       String drinkString[4];
@@ -77,4 +77,4 @@ String getValue(String data, char separator, int index) {
  return found>index ? data.substring(strIndex[0], strIndex[1]) : "";
 }
 
-*/
+

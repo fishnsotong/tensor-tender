@@ -13,6 +13,7 @@ from keras.models import Sequential
 from keras.models import model_from_json
 from keras.layers import Dense
 from keras.callbacks import ModelCheckpoint
+from keras.utils import plot_model
 
 seed = 155
 np.random.seed(seed)
@@ -74,7 +75,7 @@ def evalNN(nn, X_test, Y_test):
     print(nn.evaluate(X_test, Y_test))
 
 def evalNNHistory(nn_fitted, lastEpoch):
-    [nn_fitted.history['loss'][0:lastEpoch],nn_fitted.history['acc'][0:lastEpoch]]
+    [nn_fitted.history['loss'][1:lastEpoch],nn_fitted.history['acc'][1:lastEpoch]]
 
 def visualNNProg(nn_fitted, X_test, Y_test):
     temp_test_model = Sequential() # create model
@@ -88,12 +89,17 @@ def visualNNProg(nn_fitted, X_test, Y_test):
         # 0 is loss; 1 is accuracy
         test_over_time.append(scores)
 
+def visualModel(nn):
+    plot_model(nn, to_file='nn_visual.png', show_shapes='True')
+
+
 X_train, Y_train, X_test, Y_test = readData("data/trainingData.csv", 5)
-# nn = compileNN(14, 20, 5)
-# nn_fitted = fitNN(nn, X_train, Y_train, 500)
-test_input = np.array([[0.109589, 0.0958904, 0.0958904, 0.0273973, 0.0958904, 0.0821918, 0.136986, 0.0821918, 0.0136986, 0.0684932, 0.0821918, 0.0684932, 0.0410959, 0.0136986]])
-print(test_input.shape)
-predictNN(test_input)
+nn = compileNN(14, 20, 5)
+nn_fitted = fitNN(nn, X_train, Y_train, 500)
+#test_input = np.array([[0.109589, 0.0958904, 0.0958904, 0.0273973, 0.0958904, 0.0821918, 0.136986, 0.0821918, 0.0136986, 0.0684932, 0.0821918, 0.0684932, 0.0410959, 0.0136986]])
+#predictNN(test_input)
+#nn = loadNN()
+#visualModel(nn)
 # evalNN(nn, X_test, Y_test)
-# evalNNHistory(nn_fitted, 500)
-# visualNNProg(nn_fitted, X_test, Y_test)
+evalNNHistory(nn_fitted, 500)
+visualNNProg(nn_fitted, X_test, Y_test)
