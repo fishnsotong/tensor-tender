@@ -4,7 +4,7 @@ var fs = require('fs');
 var dishIngredients = require('./data/dishIngredients.json');
 var ingredientFlavours = require('./data/ingredientFlavours.json');
 
-var flavourArray = ["Alcoholic beverage", "Animal product", "cereal/crop", "Dairy", "fish/seafood", "Flower", "Fruit", "Herb", "Meat", "Nut/seed", "Plant", "Plant derivative", "Spice", "Vegetable"];
+var flavourArray = ["alcoholic beverage", "animal product", "cereal/crop", "dairy", "fish/seafood", "flower", "fruit", "herb", "meat", "nut/seed/pulse", "plant", "plant derivative", "spice", "vegetable"];
 
 var getIngredientFlavours = function(dish) {
   var flavourProfile = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
@@ -14,11 +14,13 @@ var getIngredientFlavours = function(dish) {
     console.log('Checking ' + dishNameCheck);
     if (dish == dishNameCheck) {
       console.log(dish + " matches " + dishNameCheck);
-      console.log(dishIngredientsCheck[1]);
-      for (i=0; i < dishIngredientsCheck.length; i++) { //loop through each ingredient
-        console.log('Checking ' + dishIngredientsCheck[i]);
-        var flavourIndex = findFlavour(dishIngredientsCheck[i], ingredientFlavours)
-        flavourProfile[flavourIndex] += 1
+      console.log(dishIngredientsCheck.length);
+      for (var x=0; x < dishIngredientsCheck.length; x++) { //loop through each ingredient
+        console.log('Checking ' + dishIngredientsCheck[x]);
+        var flavourIndex = findFlavour(dishIngredientsCheck[x], ingredientFlavours);
+        if(flavourIndex != -1) {
+          flavourProfile[flavourIndex] += 1
+        };
       };
     };
   };
@@ -26,14 +28,18 @@ var getIngredientFlavours = function(dish) {
 };
 
 function findFlavour(ingredient, ingredientFlavours) {
-  var flavourIndex;
+  var flavourIndex = -1;
   ingredientFormatted = ingredient.split(' ').join('_');
-  for (i=0; i < ingredientFlavours.length; i++) {
-    console.log('Checking ' + ingredientFormatted + ' against ' + JSON.stringify(ingredientFlavours[i].ingredient));
-    if (ingredientFormatted == JSON.stringify(ingredientFlavours[i].ingredient)) {
-      for (i=0; i<flavourArray.length; i++) {
-        if (ingredientFlavours[i].flavour == flavourArray[i]) {
-          flavourIndex = i
+  console.log(ingredientFormatted);
+  for (var n=0; n < ingredientFlavours.length; n++) {
+    if (ingredientFormatted == ingredientFlavours[n].ingredient.toString()) {
+      console.log('Ingredient matched!');
+      console.log(flavourArray);
+      for (var m=0; m<flavourArray.length; m++) {
+        console.log('Checking ' + ingredientFlavours[n].flavour.toString() + ' against ' + flavourArray[m]);
+        if (ingredientFlavours[n].flavour.toString() == flavourArray[m]) {
+          console.log('Match found!');
+          flavourIndex = m;
         };
       };
     };

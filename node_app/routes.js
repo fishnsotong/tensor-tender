@@ -10,6 +10,6 @@ module.exports = function(app) {
   app.post('/brew', function(req, res) {
     console.log(req.body);
     var dish = JSON.stringify(req.body.dishes);
-    console.log(getFlavours.getIngredientFlavours(dish));
+    console.log('Flavour Profile of ' + dish + ': ' + getFlavours.getIngredientFlavours(dish));
   });
 };
