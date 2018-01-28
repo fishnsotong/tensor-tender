@@ -1,25 +1,21 @@
-#include <Wire.h>
-#include <LiquidCrystal_I2C.h>
+const int dummy = 0;
 
-const int dispenserPins[] = {5, 6, 9, 10, 11};
+const int dispenserPins[5] = {5, 6, 9, 10, 11};
 float drinks[4];
 boolean dispenserRunning[4];
 unsigned long motorStartMillis[4];
 unsigned long motorRunMillis[4];
-
-// Set the LCD address to 0x27 for a 16 chars and 2 line display
-LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 void setup() {
   Serial.begin(9600);
   Serial.println("Ready");
 
   // initialize the LCD
-	lcd.init();
+//	lcd.init();
 
 	// Turn on the blacklight and print a message.
-	lcd.backlight();
-	lcd.print("system is operational!");
+//	lcd.backlight();
+//	lcd.print("system is operational!");
 
   // Assign pins as output
   for (int a = 0; a < 5; a++) {
@@ -29,13 +25,16 @@ void setup() {
   }
 }
 
+/*
+
 void loop() {
 
   while (Serial.available() > 0) {
     String incomingData = Serial.readString();
 
     for (int a = 0; a < 5; a++) {
-      String drinkString[a] = getValue(incomingData, ',', a);
+      String drinkString[4];
+      drinkString[a] = getValue(incomingData, ',', a);
       drinks[a] = drinkString[a].toFloat();
       motorRunMillis[a] = map(drinks[a], 0, 1, 0, 10000);
     }
@@ -48,7 +47,7 @@ void loop() {
       dispenserRunning[a] = true;
     }
 
-    if (dispenserRunning[a] && (millis() - motorStartMillis[a] > motorRunMillis)) {
+    if (dispenserRunning[a] && (millis() - motorStartMillis[a] > motorRunMillis[a])) {
       digitalWrite(dispenserPins[a], LOW);
       dispenserRunning[a] = false;
     }
@@ -74,3 +73,5 @@ String getValue(String data, char separator, int index) {
 
  return found>index ? data.substring(strIndex[0], strIndex[1]) : "";
 }
+
+*/

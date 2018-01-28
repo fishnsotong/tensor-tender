@@ -19,6 +19,8 @@ from flask import Flask
 from flask import request
 from flask import make_response
 
+import serial
+ser = serial.Serial('/dev/tty.usbmodem1411', 9600)
 
 def loadNN():
     # load json and create model
@@ -37,6 +39,11 @@ def predictNN(nn, test_input):
     drinkMix = nn.predict(test_input, batch_size=None, steps=None)
     return drinkMix
 
+def arduinoComm(resp):
+    global ser
+    ser.write(resp.encode('utf-8'))
+
+
 #setup
 nn = loadNN()
 
@@ -54,6 +61,7 @@ def pred():
         drinkMix = predictNN(nn, flavourProfile)
         resp = str(np.array(drinkMix).tolist())
         print(resp)
+        arduinoComm(resp)
         return make_response(resp)
     else:
         print('GET request received isntead of POST request')
