@@ -15,19 +15,10 @@ from keras.models import model_from_json
 from keras.layers import Dense
 from keras.callbacks import ModelCheckpoint
 
-#Read data from stdin
-def read_in():
-    lines = sys.stdin.readlines()
-    #Since our input would only be having one line, parse our JSON data from that
-    return json.loads(lines[0])
+from flask import Flask
+from flask import request
+from flask import make_response
 
-def readData(pathToFile, n_output):
-# import from local directory
-    dataset = pd.read_csv(pathToFile).values # not sure if I have headers, change to general data
-    print(dataset.shape)
-    X_train, X_test, Y_train, Y_test = train_test_split(dataset[:, :-n_output], dataset[:, -n_output:], test_size=0.25, random_state=87)
-    print(X_train.shape, Y_train.shape)
-    return X_train, Y_train, X_test, Y_test
 
 def loadNN():
     # load json and create model
@@ -46,18 +37,24 @@ def predictNN(nn, test_input):
     drinkMix = nn.predict(test_input, batch_size=None, steps=None)
     return drinkMix
 
-def main():
-    #get our data as an array from read_in()
-    lines = read_in()
-
-    if lines:
-        flavour_input = np.array(lines)
-        drinkMix = predictNN(nn, flavour_input)
-        print drinkMix
-
 #setup
 nn = loadNN()
 
-#start process
-if __name__ == '__main__':
-    main()
+app = Flask(__name__)
+
+@app.route("/pred", methods=['GET', 'POST'])
+def pred():
+    print('entered pred function')
+    print(request.method)
+    print (request.data)
+    if request.method == 'POST':
+        print("Req body: " + json.dumps(request.get_json()))
+        print(np.array([request.get_json(force=True)]).shape)
+        flavourProfile = np.array([request.get_json(force=True)])
+        drinkMix = predictNN(nn, flavourProfile)
+        resp = str(np.array(drinkMix).tolist())
+        print(resp)
+        return make_response(resp)
+    else:
+        print('GET request received isntead of POST request')
+        return

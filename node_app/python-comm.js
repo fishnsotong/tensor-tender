@@ -1,21 +1,19 @@
-var spawn = require('child_process').spawn,
-py = spawn('python', ['neural_network/fitted_model.py']),
-dataString = '';
+var request = require('request');
 
 var sendData = function(data) {
-  py.stdout.on('data', function(data){
-    dataString += data.toString();
+  var res;
+  request({
+    uri: 'http://127.0.0.1:5000/pred',
+    method: 'POST',
+    json: data
+  }, function(error, response, body) {
+    console.log("response" + response);
+    res = body;
+    if (error) {
+      console.log('Error: ' + error);
+    }
   });
-  py.stdout.on('data', function(data){
-    dataString += data.toString();
-  });
-  py.stdout.on('end', function(){
-    console.log('Drink Mix = ',dataString);
-  });
-  py.stdin.write(JSON.stringify(data));
-  py.stdin.end();
-
-  return dataString
+  return res;
 };
 
 module.exports = {

@@ -10,6 +10,9 @@ module.exports = function(app) {
   app.post('/brew', function(req, res) {
     console.log(req.body);
     var dish = JSON.stringify(req.body.dishes);
-    console.log('Flavour Profile of ' + dish + ': ' + getFlavours.getIngredientFlavours(dish));
+    flavourProfile = getFlavours.getIngredientFlavours(dish);
+    console.log('Flavour Profile of ' + dish + ': ' + flavourProfile);
+    drinkMix = pythonComm.sendData(flavourProfile);
+    console.log('Drink Mix of ' + dish + ': ' + drinkMix);
   });
 };
