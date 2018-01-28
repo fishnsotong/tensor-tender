@@ -1,7 +1,7 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
-const int dispenserPins[] = {5, 6, 9, 10, 11);
+const int dispenserPins[] = {5, 6, 9, 10, 11};
 float drinks[4];
 boolean dispenserRunning[4];
 unsigned long motorStartMillis[4];
@@ -35,7 +35,8 @@ void loop() {
     String incomingData = Serial.readString();
 
     for (int a = 0; a < 5; a++) {
-      drinks[a] = getValue(incomingData, ',', a);
+      String drinkString[a] = getValue(incomingData, ',', a);
+      drinks[a] = drinkString[a].toFloat();
       motorRunMillis[a] = map(drinks[a], 0, 1, 0, 10000);
     }
   }
@@ -47,7 +48,7 @@ void loop() {
       dispenserRunning[a] = true;
     }
 
-    if (motorRunning && (millis() - motorStartMillis[a] > motorRunMillis)) {
+    if (dispenserRunning[a] && (millis() - motorStartMillis[a] > motorRunMillis)) {
       digitalWrite(dispenserPins[a], LOW);
       dispenserRunning[a] = false;
     }
