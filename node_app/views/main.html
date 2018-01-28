@@ -89,7 +89,7 @@
 		</div>
 
     </form>
-<div style="display:none;">
+<div align="center" style="display:none;" >
 <p>Congratutlations, you have submitted successfully!!!</p>
  <form method="get" action="/main.html">
     <button type="submit">Back</button>
@@ -113,6 +113,9 @@ $(document).ready(function(){
         $("div").hide();
     });
 });
+(function blink() { 
+  $("p").fadeOut(500).fadeIn(500, blink); 
+})();
 </script>
   </body>
 </html>
